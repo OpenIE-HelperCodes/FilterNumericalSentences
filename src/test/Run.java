@@ -9,7 +9,7 @@ import help.Util_Numerical;
  * @author harinder
  *
  */
-public class TestMain {
+public class Run {
 
 	/**
 	 * @param args
@@ -18,7 +18,7 @@ public class TestMain {
 	public static void main(String[] args) throws Exception {
 		Util_Numerical.init();
 
-		String line = "Stalin was responsible for the death of 4.4 million people within the borders of the Soviet Union";
+		String line = "the number of people killed in Alabama helicopter crash is 4.";
 
 		//System.out.println("I end with a number 4.".matches(("^.+?\\d.?$")));
 		
@@ -27,7 +27,7 @@ public class TestMain {
 		for (String sentence : sentences) {
 			if(!Util_Numerical.isReqNumber(sentence)) continue;
 			//if(!Util_Numerical.isContainsMentionedEntities(sentence)) continue; 
-			flag = true; 
+			flag = true;
 		}
 		
 		System.out.println(flag);
