@@ -52,7 +52,7 @@ public class Run_FileMode {
 				String sentences[] = Util_Numerical.sentenceSplitter(line);
 				for (String sentence : sentences) {
 					try{
-						if(Util_Numerical.containsUnwantedCharacter(sentence)) continue; //TODO: it shouldn't be here?
+						if(Util_Numerical.containsUnwantedCharacter(sentence)) continue;
 						if(!Util_Numerical.isReqNumber(sentence)) continue;
 					} catch(Exception e) {
 						//System.err.println("------Continuing on Error: " + e);
