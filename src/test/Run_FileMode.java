@@ -10,10 +10,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * @author harinder
@@ -31,7 +30,7 @@ public class Run_FileMode {
 		//File folder = new File("/home/harinder/Documents/IITD_MTP/numericSentencesKiKhoj/CluewebSeUmeed/0004wb/");
 		File folder = new File(args[0]);
 		
-		List<String> files = new ArrayList<>();
+		Set<String> files = new TreeSet<>();
 		Util_Numerical.listFilesForFolder(folder, files);
 		
 		for (String file : files) {
